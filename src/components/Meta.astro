@@ -10,12 +10,12 @@ interface Props {
   image?: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
-const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
+const props = Astro.props;
+const { title, description, image = "/cartoon.png" } = props;
 ---
 
 <meta charset="utf-8" />
+<!-- -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="mobile-web-app-capable" content="yes" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,3 +39,4 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
   name="description"
   content="Timothy is part-time employed as a teacher in SUP de Vinci, France ."
 />
+//-->
