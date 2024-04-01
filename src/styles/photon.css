@@ -5,7 +5,8 @@ body,html {
     padding: 20;
     background: hsl(31, 11%, 81%);
     font-family: 'Lato', sand-serif;
-    color: hsl(349, 17%, 43%)
+    background-image: ('/seagull.gif');
+    color: hsl(349, 17%, 43%);
 }
 
 .code {
