@@ -7,6 +7,8 @@
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
+	--blue: 076497;
+	--coral: 212, 111, 101;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -15,7 +17,7 @@
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 }
-@font-face {
+/* @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
 	font-weight: 400;
@@ -28,7 +30,7 @@
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
-}
+} */
 body {
 	font-family: 'Atkinson', sans-serif;
 	margin: 0;
@@ -38,15 +40,18 @@ body {
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+	font-family: 'Alegra Sans', san-serif;
+	color: hsl(349, 17%, 43%);
+	background-image: ("/seagull.jpg");
 }
-main {
-	width: 720px;
-	max-width: calc(100% - 2em);
+main, header, footer {
+	background: hsl(31, 11%, 81%);
+	max-width: 1000px;
 	margin: auto;
-	padding: 3em 1em;
+	padding: 3em;
+	margin: 0;
 }
 h1,
 h2,
