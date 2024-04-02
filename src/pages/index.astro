@@ -1,24 +1,17 @@
 ---
-import "../styles/global.css";
-import Layout from "../layouts/Index.astro";
+import Layout from "../layouts/index.astro";
 ---
 
 <Layout>
-  <!--
-
-	Top header
-
-	plain hero
-	Contact Form, plain?
-
-	grid -> l:  Meaning stff
-				Ethics
-				Principles
-			r:  TIL
-				Recently Written
-
-	Contact Form
-	Something snappy
-	Butt stuff
- -->
+  <style>
+    html,
+    body {
+      background: --blue;
+      background-image: url("/seagull.jpg");
+    }
+    #seller {
+      background: var(--mauve);
+      font-color: var(--tan);
+    }
+  </style>
 </Layout>
