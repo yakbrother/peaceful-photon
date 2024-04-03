@@ -2,6 +2,8 @@
 import type { CollectionEntry } from "astro:content";
 import PhotonMeta from "../components/Meta.astro";
 import Header from "../components/Header.astro";
+import IndexColumnOne from "../components/IndexColumnOne.astro";
+import IndexColumnTwo from "../components/IndexColumnTwo.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import "../styles/global.css";
@@ -19,8 +21,23 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <body>
     <wrapper>
       <Header />
-      <main></main>
-      <Footer />
+      <main>
+        <slot />
+        <section>
+          <div class="column-right">
+            <IndexColumnOne />
+          </div>
+          <div class="column-two">
+            <IndexColumnTwo />
+          </div>
+        </section>
+        <Footer />
+      </main>
     </wrapper>
+    <style>
+      section {
+        display: grid;
+      }
+    </style>
   </body>
 </html>

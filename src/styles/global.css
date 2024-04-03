@@ -35,25 +35,22 @@
 	font-display: swap;
 } */
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'Poppy', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	font-size: 20px;
 	line-height: 1.7;
-	font-family: 'Alegra Sans', san-serif;
 }
 wrapper {
-	background: reading;
-	width: 80%;
-	max-width: 1024;
-	margin: auto;
-	padding: 20em;
-	margin: 0;
+	background-color: var(--reading);
+	width: 100%;
+	max-width: 1280px;
+	margin: auto 12px;
+	padding: 2em;
+	display: block;
 }
 h1,
 h2,
@@ -132,14 +129,6 @@ blockquote {
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
-}
-@media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
 }
 
 .sr-only {

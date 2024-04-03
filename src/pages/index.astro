@@ -1,17 +1,18 @@
 ---
-import Layout from "../layouts/index.astro";
+import Layout from "../layouts/Index.astro";
 ---
 
 <Layout>
   <style>
     html,
     body {
-      background: --blue;
-      background-image: url("/seagull.jpg");
-    }
-    #seller {
-      background: var(--mauve);
-      font-color: var(--tan);
+      background: linear-gradient(
+        225deg,
+        hsla(236, 14%, 39%, 1) 0%,
+        hsla(21, 8%, 67%, 1) 100%
+      );
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   </style>
 </Layout>
