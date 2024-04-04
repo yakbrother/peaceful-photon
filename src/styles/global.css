@@ -9,6 +9,7 @@
 	--accent-dark: #000d8a;
 	--blue: 076497;
 	--blue-dark: rgb(86, 88, 114)
+	--rusty: D99B4F;
 	--coral: 212, 111, 101;
 	--reading: rgb(243, 219, 215);
 	--mauve: hsl(349, 17%, 43%);
@@ -37,10 +38,8 @@
 body {
 	font-family: 'Poppy', sans-serif;
 	margin: 0;
-	padding: 0;
+	padding: 18px 0;
 	text-align: left;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
 	font-size: 20px;
 	line-height: 1.7;
 }
@@ -48,8 +47,8 @@ wrapper {
 	background-color: var(--reading);
 	width: 100%;
 	max-width: 1280px;
-	margin: auto 12px;
-	padding: 2em;
+	margin: 0 auto;
+	padding:1;
 	display: block;
 }
 h1,
